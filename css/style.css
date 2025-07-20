@@ -1,0 +1,550 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: #f6f8fa;
+  color: #222;
+}
+
+header {
+  background: black;
+  padding: 10px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav {
+  float: center;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  background: #ffcc00;
+  color: black;
+  border-radius: 4px;
+}
+
+.hero {
+  background: url("../images/hero-bank.jpg") no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  margin-top: 1px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #e6b800;
+}
+
+/* Sections */
+section {
+  padding: 40px 0;
+}
+
+.service-boxes, .news-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service, .news-post {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.news-post img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #003366;
+}
+
+footer {
+  body
+{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+#containerFooter
+{
+    width: 100%;
+    color: rgb(247, 245, 245);
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#containerFooter h3:hover, #containerFooter p:hover
+{
+    color: lightslategray;
+    cursor: pointer;
+}
+#webFooter
+{
+    padding-top: 30px;
+    font-size: 12px;
+}
+#credit 
+{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    text-align: right;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+#credit a
+{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+#credit a::after
+{
+content: "";
+background: white;
+mix-blend-mode: exclusion;
+width: calc(100% + 18px);
+height: 0;
+position: absolute;
+bottom: -4px;
+left: -10px;
+transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+#credit a:hover::after
+{
+    height: calc(100% + 8px)
+}
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 1350px)
+{
+    #containerFooter
+    {
+        padding: 15px 200px;
+    }
+}
+@media(max-width: 1166px)
+{
+    #containerFooter
+    {
+        padding: 15px 100px;
+    }
+}
+@media(max-width: 950px)
+{
+    #containerFooter
+    {
+        padding: 15px 50px;
+    }
+}
+@media(max-width: 850px)
+{
+    #containerFooter
+    {
+        font-size: 13px;
+    }
+    #webFooter
+    {
+        font-size: 10px;
+    }
+}
+@media(max-width: 750px)
+{
+    #containerFooter
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 15px 100px;
+    }
+    #webFooter
+    {
+        padding: 15px 20px;
+    }
+}
+@media(max-width: 540px)
+{
+    #containerFooter
+    {
+        padding: 0 25px;
+    }
+}
+ 
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f8fa;
+  color: #222;
+}
+
+header {
+  background: gold;
+  color: white;
+  padding: 5px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav {
+  float: center;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  background: #ffcc00;
+  color: black;
+  border-radius: 4px;
+}
+
+.hero {
+  background: url("../images/hero-bank.jpg") no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #e6b800;
+}
+
+/* Sections */
+section {
+  padding: 0px 0;
+}
+
+.service-boxes, .news-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service, .news-post {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.news-post img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #003366;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #fad20a(12, 12, 12);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: center;
+  margin: 10;
+  bottom: 0;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: gold;
+  padding: 10px 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background-color: gold;
+  border-radius: 4px;
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+  text-align: center;
+  color: #002244;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: gold;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: gold;
+}
+
+footer {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  text-align: center;
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: gold;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  max-width: 400px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+input, button {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 16px;
+}
+
+button {
+  background-color: gold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: gold\;
+}
+
+.nav-links {
+  margin-top: 20px;
+}
+
+.nav-links a {
+  display: inline-block;
+  margin: 5px 10px;
+  text-decoration: none;
+  color: gold;
+  font-weight: bold;
+}
+
+.note {
+  font-size: 14px;
+  color: gray;
+}
+
+.calc-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calc-buttons button {
+  width: 20%;
+}
